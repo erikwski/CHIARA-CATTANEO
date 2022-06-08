@@ -5096,3 +5096,19 @@ video {
     bottom: 85px;
   }
 }
+img.portfolio {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+.section-heading-dark span{
+  color: #000 !important;
+}
+@media screen and (max-width: 995px) {
+  img.portfolio {
+    height: 50%;
+  }
+  .section-heading-dark span{
+  color: rgb(255, 255, 255) !important;
+}
+}

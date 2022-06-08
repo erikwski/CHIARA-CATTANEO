@@ -30,10 +30,30 @@
 $(function () {
   "use strict";
 
+    //GENERO HTML PORTFOLIO
+    for (let index = 27; index > 0; index--) {
+        let num = index < 10 ? "0" + index : "" + index;
+        $(`
+            <div class="section dark-mode" id="section${index}">
+                <div class="section-title-wrapper">
+                <h3 class="section-heading section-heading-dark">
+                    <span>${num}.</span>
+                </h3>
+                </div>
+                <div class="hero-fullscreen">
+                <div class="borders-l"></div>
+                <div class="borders-r"></div>
+                <img src="portfolio/Portfolio_cattaneo.0${num}.jpeg" class="portfolio">
+                </div>
+            </div>
+        `).insertAfter("#section0");
+        
+    }
+
   // 1. preloader
   $("#preloader").fadeOut(1000);
   $(".preloader-bg").delay(800).fadeOut(1000);
-  
+
   // 5. facts counter
   $(".facts-counter-number").appear(function () {
     var count = $(this);
