@@ -65,6 +65,7 @@
 }
 .intro > * {
   font-family: "Hatton" !important;
+  text-transform: capitalize !important;
 }
 /* 1. TEMPLATE BACKGROUNDS */
 /* 1.1. home IMG BACKGROUND */
