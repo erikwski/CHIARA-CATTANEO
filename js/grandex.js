@@ -30,16 +30,16 @@
 $(function () {
   "use strict";
 
-    //GENERO HTML PORTFOLIO
-    for (let index = 27; index > 0; index--) {
-        let num = index < 10 ? "0" + index : "" + index;
-        $(`
+  $("html").click(() => {
+    var audio = new Audio("../musica_bg.mp3");
+    audio.play();
+  });
+
+  //GENERO HTML PORTFOLIO
+  for (let index = 27; index > 0; index--) {
+    let num = index < 10 ? "0" + index : "" + index;
+    $(`
             <div class="section dark-mode" id="section${index}">
-                <div class="section-title-wrapper">
-                <h3 class="section-heading section-heading-dark">
-                    <span>${num}.</span>
-                </h3>
-                </div>
                 <div class="hero-fullscreen">
                 <div class="borders-l"></div>
                 <div class="borders-r"></div>
@@ -47,8 +47,7 @@ $(function () {
                 </div>
             </div>
         `).insertAfter("#section0");
-        
-    }
+  }
 
   // 1. preloader
   $("#preloader").fadeOut(1000);
@@ -119,16 +118,67 @@ $(function () {
 
   // 7. fullPage
   $("#fullpage").fullpage({
-    anchors: ["home", "about", "services", "works", "news", "contact"],
+    anchors: [
+      "home",
+      "inizio_portfolio",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "viaggio_spaziale",
+      "",
+      "moonbean",
+      "",
+      "",
+      "",
+      "errore",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "contatti",
+    ],
     navigation: true,
     navigationPosition: "right",
     navigationTooltips: [
-      "Home",
-      "About",
-      "Services",
-      "Works",
-      "News",
-      "Contact",
+      "home",
+      "Inizio Portfolio",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Viaggio Spaziale",
+      "",
+      "Moonbean",
+      "",
+      "",
+      "",
+      "Errore",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Contatti",
     ],
     responsiveWidth: 995,
     autoScrolling: true,

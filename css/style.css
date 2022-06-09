@@ -59,7 +59,13 @@
   38. Owl Carousel CUSTOM
   39. divider
 */
-
+@font-face {
+  font-family: Hatton;
+  src: url("fonts/Hatton-Medium.otf") format("opentype");
+}
+.intro > * {
+  font-family: "Hatton" !important;
+}
 /* 1. TEMPLATE BACKGROUNDS */
 /* 1.1. home IMG BACKGROUND */
 .section-bg-home {
@@ -5101,14 +5107,14 @@ img.portfolio {
   width: 100%;
   height: 100%;
 }
-.section-heading-dark span{
+.section-heading-dark span {
   color: #000 !important;
 }
 @media screen and (max-width: 995px) {
   img.portfolio {
     height: 50%;
   }
-  .section-heading-dark span{
-  color: rgb(255, 255, 255) !important;
-}
+  .section-heading-dark span {
+    color: rgb(255, 255, 255) !important;
+  }
 }
