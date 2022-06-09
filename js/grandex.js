@@ -30,7 +30,8 @@
 $(function () {
   "use strict";
 
-  $("html").click(() => {
+  $("html").on("click", () => {
+    $("html").off("click");
     var audio = new Audio("../musica_bg.mp3");
     audio.play();
   });
@@ -39,14 +40,14 @@ $(function () {
   for (let index = 27; index > 0; index--) {
     let num = index < 10 ? "0" + index : "" + index;
     $(`
-            <div class="section dark-mode" id="section${index}">
-                <div class="hero-fullscreen">
-                <div class="borders-l"></div>
-                <div class="borders-r"></div>
-                <img src="portfolio/Portfolio_cattaneo.0${num}.jpeg" class="portfolio">
-                </div>
-            </div>
-        `).insertAfter("#section0");
+      <div class="section dark-mode" id="section${index}">
+        <div class="hero-fullscreen">
+          <div class="borders-l"></div>
+          <div class="borders-r"></div>
+          <img src="portfolio/Portfolio_cattaneo.0${num}.jpeg" class="portfolio">
+        </div>
+      </div>
+  `).insertAfter("#section0");
   }
 
   // 1. preloader
