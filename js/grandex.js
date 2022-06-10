@@ -134,62 +134,41 @@ $(function () {
   function loadYoutubeVideo() {
     // VIAGGIO SPAZIALE
     $("#section16").append(`
-      <div id="video_yt_1" class="youtube_video"  style="position: absolute;left: 11.5%;width: 20%;top: 21%;height: 57%;"></div>
+      <div id="video_yt_1" class="youtube_video" style="position: absolute;left: 11.5%;width: 20%;top: 21%;height: 57%;"></div>
     `);
-    BigPicture({
-      el: document.getElementById("video_yt_1"),
-      ytSrc: "https://youtube.com/shorts/Asde-NfNPe8",
-    });
+    // ytSrc: "https://youtube.com/shorts/Asde-NfNPe8",
     $("#section16").append(`
       <div id="video_yt_2" class="youtube_video" style="position: absolute;right: 12%;width: 20%;top: 21%;height: 42%;"></div>
     `);
-    BigPicture({
-      el: document.getElementById("video_yt_2"),
-      ytSrc: "https://youtube.com/shorts/FFpryYgbjx4",
-    });
+    // ytSrc: "https://youtube.com/shorts/FFpryYgbjx4",
     $("#section16").append(`
       <div id="video_yt_3" class="youtube_video" style="position: absolute;left: 40.5%;width: 19%;top: 27%;height: 37%;"></div>  
     `);
-    BigPicture({
-      el: document.getElementById("video_yt_3"),
-      ytSrc: "https://youtube.com/shorts/NR-KEwV4FUw",
-    });
+    // ytSrc: "https://youtube.com/shorts/NR-KEwV4FUw",
 
     // VIDEO PROMOZIONALE MOONBEAN
     $("#section20").append(`
       <div id="video_yt_4" class="youtube_video" style="position: absolute;left: 9.5%;width: 81%;top: 12%;height: 81%;"></div>
     `);
-    BigPicture({
-      el: document.getElementById("video_yt_4"),
-      ytSrc: "https://youtu.be/wfioSULDUX8",
-    });
+    // ytSrc: "https://youtu.be/wfioSULDUX8",
 
     // POSTER
     $("#section12").append(`
       <div id="video_yt_5" class="youtube_video" style="position: absolute;left: 52.3%;width: 36%;top: 57%;height: 36%;"></div>
     `);
-    BigPicture({
-      el: document.getElementById("video_yt_5"),
-      ytSrc: "https://youtu.be/WmgMn9nvcug",
-    });
+      // ytSrc: "https://youtu.be/WmgMn9nvcug",
 
     //timeline
     $("#section13").append(`
       <div id="video_yt_6" class="youtube_video" style="position: absolute;left: 68%;width: 28.4%;top: 23%;height: 28.5%;"></div>
     `);
-    BigPicture({
-      el: document.getElementById("video_yt_6"),
-      ytSrc: "https://youtu.be/cRwZl3qh_H0",
-    });
+      // ytSrc: "https://youtu.be/cRwZl3qh_H0",
 
     //comunicazione
     $("#section6").append(`
       <div id="video_yt_7" class="youtube player" data-property="{videoURL:'https://youtu.be/hfN6Ogc5hDM',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}" style="position: absolute;left: 46.8%;width: 28.5%;top: 64.4%;height: 28.5%;"></div>
     `);
-    BigPicture({
-      el: document.getElementById("video_yt_7"),
-      ytSrc: "z_PeaHVcohg",
-    });
+      // ytSrc: "https://youtu.be/hfN6Ogc5hDM",
   }
   resizeEvent();
 
