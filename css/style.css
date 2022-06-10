@@ -5111,11 +5111,43 @@ img.portfolio {
 .section-heading-dark span {
   color: #000 !important;
 }
-@media screen and (max-width: 995px) {
+#mobile_alert {
+  display: none;
+}
+@media screen and (max-width: 996px) {
   img.portfolio {
     height: 50%;
   }
   .section-heading-dark span {
     color: rgb(255, 255, 255) !important;
+  }
+  #mobile_alert {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #2d2d2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 99999;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  #mobile_alert h1 {
+    font-size: 64px;
+  }
+  #mobile_alert h3 {
+    font-size: 1.2rem;
+  }
+  .hide_overflow {
+    overflow: hidden !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  #mobile_alert h1 {
+    font-size: 50px;
   }
 }
