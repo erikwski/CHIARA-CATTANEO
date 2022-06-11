@@ -166,7 +166,7 @@ $(function () {
 
     //comunicazione
     $("#section6").append(`
-      <div id="video_yt_7" class="youtube player" data-property="{videoURL:'https://youtu.be/hfN6Ogc5hDM',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}" style="position: absolute;left: 46.8%;width: 28.5%;top: 64.4%;height: 28.5%;"></div>
+      <div id="video_yt_7" class="youtube_video" data-property="{videoURL:'https://youtu.be/hfN6Ogc5hDM',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}" style="position: absolute;left: 46.8%;width: 28.5%;top: 64.4%;height: 28.5%;"></div>
     `);
       // ytSrc: "https://youtu.be/hfN6Ogc5hDM",
   }
