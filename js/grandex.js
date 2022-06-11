@@ -134,41 +134,122 @@ $(function () {
   function loadYoutubeVideo() {
     // VIAGGIO SPAZIALE
     $("#section16").append(`
-      <div id="video_yt_1" class="youtube_video" style="position: absolute;left: 11.5%;width: 20%;top: 21%;height: 57%;"></div>
+      <div id="video_yt_1" class="youtube_video" style="position: absolute;left: 11.5%;width: 20%;top: 21%;height: 57%;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+        </svg>
+      </div>
     `);
-    // ytSrc: "https://youtube.com/shorts/Asde-NfNPe8",
+    $("#video_yt_1").click(() => {
+      console.log("video_yt_1");
+      BigPicture({
+        el: document.getElementById("video_yt_1"),
+        ytSrc: "Asde-NfNPe8",
+      });
+    });
     $("#section16").append(`
-      <div id="video_yt_2" class="youtube_video" style="position: absolute;right: 12%;width: 20%;top: 21%;height: 42%;"></div>
+      <div id="video_yt_2" class="youtube_video" style="position: absolute;right: 12%;width: 20%;top: 21%;height: 42%;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+        </svg>
+      </div>
     `);
-    // ytSrc: "https://youtube.com/shorts/FFpryYgbjx4",
+    $("#video_yt_2").click(() => {
+      console.log("video_yt_2");
+      BigPicture({
+        el: document.getElementById("video_yt_2"),
+        ytSrc: "FFpryYgbjx4",
+      });
+    });
     $("#section16").append(`
-      <div id="video_yt_3" class="youtube_video" style="position: absolute;left: 40.5%;width: 19%;top: 27%;height: 37%;"></div>  
+      <div id="video_yt_3" class="youtube_video" style="position: absolute;left: 40.5%;width: 19%;top: 27%;height: 37%;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+        </svg>
+      </div>  
     `);
-    // ytSrc: "https://youtube.com/shorts/NR-KEwV4FUw",
+    $("#video_yt_3").click(() => {
+      console.log("video_yt_3");
+      BigPicture({
+        el: document.getElementById("video_yt_3"),
+        ytSrc: "NR-KEwV4FUw",
+      });
+    });
 
     // VIDEO PROMOZIONALE MOONBEAN
     $("#section20").append(`
-      <div id="video_yt_4" class="youtube_video" style="position: absolute;left: 9.5%;width: 81%;top: 12%;height: 81%;"></div>
+      <div id="video_yt_4" class="youtube_video" style="position: absolute;left: 9.5%;width: 81%;top: 12%;height: 81%;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+        </svg>
+      </div>
     `);
-    // ytSrc: "https://youtu.be/wfioSULDUX8",
+    $("#video_yt_4").click(() => {
+      console.log("video_yt_4");
+      BigPicture({
+        el: document.getElementById("video_yt_4"),
+        ytSrc: "wfioSULDUX8",
+      });
+    });
 
     // POSTER
     $("#section12").append(`
-      <div id="video_yt_5" class="youtube_video" style="position: absolute;left: 52.3%;width: 36%;top: 57%;height: 36%;"></div>
+      <div id="video_yt_5" class="youtube_video" style="position: absolute;left: 52.3%;width: 36%;top: 57%;height: 36%;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+        </svg>
+      </div>
     `);
-      // ytSrc: "https://youtu.be/WmgMn9nvcug",
+    $("#video_yt_5").click(() => {
+      console.log("video_yt_5");
+      BigPicture({
+        el: document.getElementById("video_yt_5"),
+        ytSrc: "WmgMn9nvcug",
+      });
+    });
 
     //timeline
     $("#section13").append(`
-      <div id="video_yt_6" class="youtube_video" style="position: absolute;left: 68%;width: 28.4%;top: 23%;height: 28.5%;"></div>
+      <div id="video_yt_6" class="youtube_video" style="position: absolute;left: 68%;width: 28.4%;top: 23%;height: 28.5%;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+        </svg>
+      </div>
     `);
-      // ytSrc: "https://youtu.be/cRwZl3qh_H0",
+    $("#video_yt_6").click(() => {
+      console.log("video_yt_6");
+      BigPicture({
+        el: document.getElementById("video_yt_6"),
+        ytSrc: "cRwZl3qh_H0",
+      });
+    });
 
     //comunicazione
     $("#section6").append(`
+<<<<<<< HEAD
       <div id="video_yt_7" class="youtube_video" data-property="{videoURL:'https://youtu.be/hfN6Ogc5hDM',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}" style="position: absolute;left: 46.8%;width: 28.5%;top: 64.4%;height: 28.5%;"></div>
+=======
+      <div id="video_yt_7" class="youtube player" data-property="{videoURL:'https://youtu.be/hfN6Ogc5hDM',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}" style="position: absolute;left: 46.8%;width: 28.5%;top: 64.4%;height: 28.5%;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+        </svg>
+      </div>
+>>>>>>> 0a70f01b9b187e3a2aae7ed4e7a654a4abbbadbb
     `);
-      // ytSrc: "https://youtu.be/hfN6Ogc5hDM",
+    $("#video_yt_7").click(() => {
+      console.log("video_yt_7");
+      BigPicture({
+        el: document.getElementById("video_yt_7"),
+        ytSrc: "hfN6Ogc5hDM",
+      });
+    });
   }
   resizeEvent();
 
