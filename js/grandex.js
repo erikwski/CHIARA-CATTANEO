@@ -37,14 +37,14 @@ $(function () {
   });
 
   //GENERO HTML PORTFOLIO
-  for (let index = 27; index > 0; index--) {
+  for (let index = 28; index > 0; index--) {
     let num = index < 10 ? "0" + index : "" + index;
     $(`
       <div class="section dark-mode" id="section${index}">
         <div class="hero-fullscreen">
           <div class="borders-l"></div>
           <div class="borders-r"></div>
-          <img src="portfolio/Portfolio_cattaneo.0${num}.jpeg" class="portfolio">
+          <img src="portfolio/page_0${num}.jpeg" class="portfolio">
         </div>
       </div>
   `).insertAfter("#section0");
@@ -104,6 +104,19 @@ $(function () {
       $(this).addClass("active");
       $(".menu-img").removeClass("active");
       menuImg.addClass("active");
+      if (ref === "menu-1") {
+        $(".panel-from-right, .panel-overlay-from-left").addClass(
+          "fast-transaction"
+        );
+        $(".panel-from-right").removeClass("opacity-on-open");
+        $(".panel-overlay-from-left").removeClass("extend-on-open");
+        $(".panel-from-right, .panel-overlay-from-left").removeClass(
+          "fast-transaction"
+        );
+      } else {
+        $(".panel-from-right").addClass("opacity-on-open");
+        $(".panel-overlay-from-left").addClass("extend-on-open");
+      }
     });
   }
   function imgMenu() {
@@ -133,7 +146,7 @@ $(function () {
   }
   function loadYoutubeVideo() {
     // VIAGGIO SPAZIALE
-    $("#section16").append(`
+    $("#section23").append(`
       <div id="video_yt_1" class="youtube_video" style="position: absolute;left: 11.5%;width: 20%;top: 21%;height: 57%;">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -142,13 +155,12 @@ $(function () {
       </div>
     `);
     $("#video_yt_1").click(() => {
-      console.log("video_yt_1");
       BigPicture({
         el: document.getElementById("video_yt_1"),
         ytSrc: "Asde-NfNPe8",
       });
     });
-    $("#section16").append(`
+    $("#section23").append(`
       <div id="video_yt_2" class="youtube_video" style="position: absolute;right: 12%;width: 20%;top: 21%;height: 42%;">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -157,13 +169,12 @@ $(function () {
       </div>
     `);
     $("#video_yt_2").click(() => {
-      console.log("video_yt_2");
       BigPicture({
         el: document.getElementById("video_yt_2"),
         ytSrc: "FFpryYgbjx4",
       });
     });
-    $("#section16").append(`
+    $("#section23").append(`
       <div id="video_yt_3" class="youtube_video" style="position: absolute;left: 40.5%;width: 19%;top: 27%;height: 37%;">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -172,7 +183,6 @@ $(function () {
       </div>  
     `);
     $("#video_yt_3").click(() => {
-      console.log("video_yt_3");
       BigPicture({
         el: document.getElementById("video_yt_3"),
         ytSrc: "NR-KEwV4FUw",
@@ -180,7 +190,7 @@ $(function () {
     });
 
     // VIDEO PROMOZIONALE MOONBEAN
-    $("#section20").append(`
+    $("#section27").append(`
       <div id="video_yt_4" class="youtube_video" style="position: absolute;left: 9.5%;width: 81%;top: 12%;height: 81%;">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -189,7 +199,6 @@ $(function () {
       </div>
     `);
     $("#video_yt_4").click(() => {
-      console.log("video_yt_4");
       BigPicture({
         el: document.getElementById("video_yt_4"),
         ytSrc: "wfioSULDUX8",
@@ -197,7 +206,7 @@ $(function () {
     });
 
     // POSTER
-    $("#section12").append(`
+    $("#section19").append(`
       <div id="video_yt_5" class="youtube_video" style="position: absolute;left: 52.3%;width: 36%;top: 57%;height: 36%;">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -206,7 +215,6 @@ $(function () {
       </div>
     `);
     $("#video_yt_5").click(() => {
-      console.log("video_yt_5");
       BigPicture({
         el: document.getElementById("video_yt_5"),
         ytSrc: "WmgMn9nvcug",
@@ -214,7 +222,7 @@ $(function () {
     });
 
     //timeline
-    $("#section13").append(`
+    $("#section20").append(`
       <div id="video_yt_6" class="youtube_video" style="position: absolute;left: 68%;width: 28.4%;top: 23%;height: 28.5%;">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -223,7 +231,6 @@ $(function () {
       </div>
     `);
     $("#video_yt_6").click(() => {
-      console.log("video_yt_6");
       BigPicture({
         el: document.getElementById("video_yt_6"),
         ytSrc: "cRwZl3qh_H0",
@@ -231,7 +238,7 @@ $(function () {
     });
 
     //comunicazione
-    $("#section6").append(`
+    $("#section13").append(`
       <div id="video_yt_7" class="youtube_video" data-property="{videoURL:'https://youtu.be/hfN6Ogc5hDM',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}" style="position: absolute;left: 46.8%;width: 28.5%;top: 64.4%;height: 28.5%;">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -240,10 +247,54 @@ $(function () {
       </div>
     `);
     $("#video_yt_7").click(() => {
-      console.log("video_yt_7");
       BigPicture({
         el: document.getElementById("video_yt_7"),
         ytSrc: "hfN6Ogc5hDM",
+      });
+    });
+    //INTIMAMENTE DISTRATTA 1
+    $("#section4").append(`
+      <div id="video_yt_8" class="youtube_video" style="position: absolute;left: 49.9%;width: 37.4%;top: 59%;height: 36.45%;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+        </svg>
+      </div>
+    `);
+    $("#video_yt_8").click(() => {
+      BigPicture({
+        el: document.getElementById("video_yt_1"),
+        ytSrc: "g3ixSA2ZJM0",
+      });
+    });
+    //INTIMAMENTE DISTRATTA 2
+    $("#section6").append(`
+      <div id="video_yt_9" class="youtube_video" style="position: absolute;left: 9.3%;width: 81.4%;top: 7.75%;height: 81.5%;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+        </svg>
+      </div>
+    `);
+    $("#video_yt_9").click(() => {
+      BigPicture({
+        el: document.getElementById("video_yt_1"),
+        ytSrc: "4y7wWcGQh30",
+      });
+    });
+    //INTIMAMENTE DISTRATTA 3
+    $("#section8").append(`
+      <div id="video_yt_10" class="youtube_video" style="position: absolute;left: 64.1%;width: 23.3%;top: 13.4%;height: 73.2%;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+        </svg>
+      </div>
+    `);
+    $("#video_yt_10").click(() => {
+      BigPicture({
+        el: document.getElementById("video_yt_1"),
+        ytSrc: "p3k8fZNgk0Q",
       });
     });
   }
@@ -254,6 +305,13 @@ $(function () {
     anchors: [
       "home",
       "inizio_portfolio",
+      "",
+      "intimamente_distratta",
+      "",
+      "",
+      "",
+      "",
+      "",
       "",
       "",
       "",
@@ -273,19 +331,15 @@ $(function () {
       "",
       "",
       "",
-      "errore",
-      "",
-      "",
-      "",
-      "",
-      "",
       "contatti",
     ],
     navigation: true,
     navigationPosition: "right",
     navigationTooltips: [
-      "home",
-      "Inizio Portfolio",
+      "Home",
+      "Intro",
+      "",
+      "Intimamente distratta",
       "",
       "",
       "",
@@ -299,15 +353,14 @@ $(function () {
       "",
       "",
       "",
-      "Viaggio Spaziale",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Viaggio spaziale",
       "",
       "Moonbean",
-      "",
-      "",
-      "",
-      "Errore",
-      "",
-      "",
       "",
       "",
       "",
