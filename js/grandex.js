@@ -303,68 +303,68 @@ $(function () {
   // 7. fullPage
   $("#fullpage").fullpage({
     anchors: [
-      "home",
-      "inizio_portfolio",
-      "",
-      "intimamente_distratta",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "viaggio_spaziale",
-      "",
-      "moonbean",
-      "",
-      "",
-      "",
-      "contatti",
+      "home", // pag. 1
+      "about_me", // pag. 2
+      "", // pag. 3
+      "exhibit_design", // pag. 4
+      "", // pag. 5
+      "", // pag. 6
+      "", // pag. 7
+      "", // pag. 8
+      "", // pag. 9
+      "", // pag. 10
+      "", // pag. 11
+      "", // pag. 12
+      "", // pag. 13
+      "", // pag. 14
+      "grafica_editoriale", // pag. 15
+      "", // pag. 16
+      "", // pag. 17
+      "data_visualization", // pag. 18
+      "", // pag. 19
+      "", // pag. 20
+      "", // pag. 21
+      "", // pag. 22
+      "grafica_pubblicitaria", // pag. 23
+      "", // pag. 24
+      "branding", // pag. 25
+      "", // pag. 26
+      "", // pag. 27
+      "", // pag. 28
+      "contatti", // pag. 29
     ],
     navigation: true,
     navigationPosition: "right",
     navigationTooltips: [
-      "Home",
-      "Intro",
-      "",
-      "Intimamente distratta",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "Viaggio spaziale",
-      "",
-      "Moonbean",
-      "",
-      "",
-      "",
-      "Contatti",
+      "intro", // pag. 1
+      "inizio_portfolio", // pag. 2
+      "", // pag. 3
+      "Exhibit design e comunicazione", // pag. 4
+      "", // pag. 5
+      "", // pag. 6
+      "", // pag. 7
+      "", // pag. 8
+      "", // pag. 9
+      "", // pag. 10
+      "", // pag. 11
+      "", // pag. 12
+      "", // pag. 13
+      "", // pag. 14
+      "Grafica da stregoneria e satanismo", // pag. 15
+      "", // pag. 16
+      "", // pag. 17
+      "Data da Baudelaire", // pag. 18
+      "", // pag. 19
+      "", // pag. 20
+      "", // pag. 21
+      "", // pag. 22
+      "Grafica pubblicitaria da fornasetti", // pag. 23
+      "", // pag. 23
+      "Brand da moonbeam", // pag. 24
+      "", // pag. 25
+      "", // pag. 26
+      "", // pag. 27
+      "I miei contatti", // pag. 28
     ],
     responsiveWidth: 995,
     autoScrolling: true,
