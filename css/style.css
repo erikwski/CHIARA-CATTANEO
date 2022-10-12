@@ -927,6 +927,10 @@ li {
   pointer-events: none;
 }
 
+.menu-img:not(.not-aspect-ratio) {
+  aspect-ratio: 16/9;
+}
+
 .menu-img.active {
   opacity: 1;
   -moz-opacity: 1;
